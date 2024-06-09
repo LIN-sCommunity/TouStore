@@ -1,0 +1,220 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    line-height: 1.6;
+    background-image: url(' '); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Agar gambar menutupi seluruh area */
+    background-position: center; /* Posisikan di tengah */
+    background-repeat: no-repeat; /* Agar gambar tidak diulang */
+}
+
+/* Header styling */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.game-terpopuler {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.menu-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 1rem;
+    background-color: #ffffff; /* White */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    flex-direction: column; /* Ensure vertical alignment */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+}
+
+.menu li {
+    padding: 0.5rem rem;
+    font-size: 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu li:hover {
+    background-color: #f0f0f0;
+}
+.btn {
+    display: inline-block;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Akun list styling */
+.akun-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.akun {
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.akun img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.akun h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.akun p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Untuk layar kecil seperti smartphone */
+@media only screen and (max-width: 600px) {
+    .signup-container {
+        width: 80%; /* Mengurangi lebar kontainer untuk layar kecil */
+    }
+
+    .navbar {
+        padding: 10px 20px; /* Mengurangi padding untuk bilah navigasi pada layar kecil */
+    }
+
+    .nav-links {
+        gap: 10px; /* Mengurangi jarak antara tautan navigasi pada layar kecil */
+    }
+
+    .input-group label {
+        font-size: 12px; /* Mengurangi ukuran font label untuk layar kecil */
+    }
+
+    .input-group input {
+        font-size: 14px; /* Mengurangi ukuran font input untuk layar kecil */
+    }
+}
+
+/* Untuk layar sedang dan besar seperti tablet dan desktop */
+@media only screen and (min-width: 601px) {
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .signup-container {
+        width: 300px;
+    }
+}
